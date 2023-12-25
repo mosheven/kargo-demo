@@ -6,14 +6,10 @@ resources:
 - configmap.yaml
 
 patches:
-- patch: |-
+- target:
+    kind: Service
+    name: kargo-demo
+  patch: |-
     - op: replace
       path: /spec/ports/0/nodePort
       value: 30081
-  target:
-    kind: Service
-    name: kargo-demo
-images:
-- name: mosheeven397/webapp
-  newName: mosheeven397/webapp
-  newTag: 0.0.1
