@@ -13,8 +13,8 @@ spec:
         app: kargo-demo
     spec:
       containers:
-      - name: nginx 
-        image: mosheeven397/webapp
+      - name: webapp 
+        image: mosheeven397/webapp:0.0.1
         volumeMounts:
         - name: content
           mountPath: /usr/share/nginx/html
