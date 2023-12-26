@@ -16,4 +16,4 @@ patches:
 images:
 - name: mosheeven397/webapp
   newName: mosheeven397/webapp
-  newTag: v0.0.6
+  newTag: v0.0.8
