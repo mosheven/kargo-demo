@@ -9,11 +9,11 @@ patches:
 - patch: |-
     - op: replace
       path: /spec/ports/0/nodePort
-      value: 30083
+      value: 30086
   target:
     kind: Service
     name: kargo-demo
 images:
 - name: mosheeven397/webapp
   newName: mosheeven397/webapp
-  newTag: v0.0.4
+  newTag: v0.0.6
