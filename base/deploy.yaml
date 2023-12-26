@@ -23,6 +23,3 @@ spec:
       - name: content
         configMap:
           name: kargo-demo-content
-      env:
-      - name: COLOR
-        value: amber
